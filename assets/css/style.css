@@ -19,3 +19,28 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 }
+
+/* Choices that emojis represent */
+/* Code from Web Dev simplified as specified in ReadMe */
+
+.choices {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+	background-color: #BE4A49;
+	border-color: #C0A959;
+	border-style: dotted;
+	margin: 2rem;
+}
+.choice {
+	cursor: pointer;
+	transition: 100ms;
+	padding: 1.5rem;
+}
+.choice>p {
+	font-size: 100px;
+}
+.choice:hover {
+	transform: scale(1.7);
+}
