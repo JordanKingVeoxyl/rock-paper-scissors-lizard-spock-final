@@ -50,3 +50,54 @@ function lose(userChoice, computerChoice) {
 function draw(userChoice, computerChoice) {
 	result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a draw!`;
 }
+
+// COMPARES ALL COMBINATIONS OF THE GAME AND WHAT THE RESULT IS 
+function game(userChoice) {
+	const computerChoice = getComputerChoice();
+	switch (userChoice + computerChoice) {
+		    // USER WINNING CONDITIONS
+		    // rock beats scissors and lizard
+		case "rs":
+		case "rl":
+			// paper beats rock and spock
+		case "pr":
+		case "pk":
+			// scissors beats paper and lizard
+		case "sp":
+		case "sl":
+			// lizard beats paper and spock
+		case "lp":
+		case "lk":
+			// spock beats scissors and rock
+		case "ks":
+		case "kr":
+			win(userChoice, computerChoice);
+			break;
+			// USER LOSING CONDITIONS
+			// rock loses to paper and spock
+		case "rp":
+		case "rk":
+			// paper loses to scissors and lizard
+		case "ps":
+		case "pl":
+			// scissors loses to rock and spock
+		case "sr":
+		case "sk":
+			// lizard loses to rock and scissors
+		case "lr":
+		case "ls":
+			// spock loses to paper and lizard
+		case "kp":
+		case "kl":
+			lose(userChoice, computerChoice);
+			break;
+			// USER DRAWS CONDITIONS
+		case "rr":
+		case "pp":
+		case "ss":
+		case "ll":
+		case "kk":
+			draw(userChoice, computerChoice);
+			break;
+	}
+}
