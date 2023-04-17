@@ -10,7 +10,6 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
-
 //GETS RANDOM COMPUTER CHOICE
 function getComputerChoice() {
 	const choices = ['r', 'p', 's', 'l', 'k'];
@@ -25,7 +24,6 @@ function convertToWord(letter) {
 	if (letter === "l") return "Lizard";
 	return "Spock";
 }
-
 // FUNCTIONS FOR MESSAGE ON WIN, LOST OR DRAW, AND INCREMENT SCORE TO THE WINNER
 function win(userChoice, computerChoice) {
 	const userChoice_div = document.getElementById(userChoice);
@@ -50,7 +48,6 @@ function lose(userChoice, computerChoice) {
 function draw(userChoice, computerChoice) {
 	result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It's a draw!`;
 }
-
 // COMPARES ALL COMBINATIONS OF THE GAME AND WHAT THE RESULT IS 
 function game(userChoice) {
 	const computerChoice = getComputerChoice();
@@ -101,7 +98,6 @@ function game(userChoice) {
 			break;
 	}
 }
-
 // EVENTS WHEN CLICKING THE EMOJI BUTTONS
 function main() {
 	rock_div.addEventListener('click', function() {
