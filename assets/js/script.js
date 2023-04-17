@@ -17,3 +17,11 @@ function getComputerChoice() {
 	const randomNumber = Math.floor(Math.random() * 5);
 	return choices[randomNumber];
 }
+
+function convertToWord(letter) {
+	if (letter === "r") return "Rock";
+	if (letter === "p") return "Paper";
+	if (letter === "s") return "Scissors";
+	if (letter === "l") return "Lizard";
+	return "Spock";
+}
