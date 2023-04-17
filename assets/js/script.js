@@ -101,3 +101,23 @@ function game(userChoice) {
 			break;
 	}
 }
+
+// EVENTS WHEN CLICKING THE EMOJI BUTTONS
+function main() {
+	rock_div.addEventListener('click', function() {
+		game("r");
+	});
+	paper_div.addEventListener('click', function() {
+		game("p");
+	});
+	scissors_div.addEventListener('click', function() {
+		game("s");
+	});
+	lizard_div.addEventListener('click', function() {
+		game("l");
+	});
+	spock_div.addEventListener('click', function() {
+		game("k");
+	});
+}
+main();
