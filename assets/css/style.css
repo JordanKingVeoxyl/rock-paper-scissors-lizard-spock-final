@@ -44,3 +44,21 @@ h3 {
 .choice:hover {
 	transform: scale(1.7);
 }
+
+/* Results in the form of text based on selection of user and computer choice*/
+/* Code from Whats dev as specified in ReadMe */
+
+.result {
+	font-size: 150%;
+	color: #EBBA4A;
+	padding: 1rem;
+	background-color: #6C7348;
+	border-radius: 40%;
+	border-color: #C0A959;
+	border-style: dashed;
+	width: 30%;
+	margin: auto;
+}
+.result>p {
+	text-align: center;
+}
