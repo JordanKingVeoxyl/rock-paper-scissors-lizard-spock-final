@@ -62,3 +62,34 @@ h3 {
 .result>p {
 	text-align: center;
 }
+
+/* Score Display */
+/* Code from Web Dev simplified as specified in ReadMe */
+
+.score-board {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+.score-text {
+	color: #FAC85D;
+	background-color: #6a8051;
+	border-radius: 30%;
+	border-style: dotted;
+	padding: 1rem;
+	margin: 1rem;
+}
+#user-score {
+	margin-left: 1rem;
+}
+#computer-score {
+	margin-left: 1rem;
+}
+.result-loser {
+	transform: scale(0.5, 0.5)
+}
+.result-winner {
+	transform: scale(1.5);
+}
