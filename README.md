@@ -1,108 +1,185 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors, Lizard, Spock!
 
-Welcome JordanKingVeoxyl,
+This webgame is an extension of the classic game rock, paper, scissors with 2 extra options!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![amiresponsive website showcase of rock, paper, scissors, lizard, spock](assets/images/amiresponsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[rock, paper, scissors, lizard, spock](https://jordankingveoxyl.github.io/rock-paper-scissors-lizard-spock-final/)
 
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+## CONTENTS
 ---
+* [User Experience](#user-experience-ux)
+  * [User Stories](#user-stories)
 
-Happy coding!
+* [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Wireframes](#wireframes)
+
+* [Features](#features)
+  * [Future Implementations](#future-implementations)
+  * [Accessibility](#accessibility)
+
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+
+* [Deployment & Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
+    * [How to Fork](#how-to-fork)
+    * [How to Clone](#how-to-clone)
+
+* [Testing](#testing)
+
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
+  * [Acknowledgments](#acknowledgments)
+
+## User Experience (UX)
+---
+Rock, Paper, scissors, Lizard, Spock! is a simple game to play with anybody, or to use for making random decisions based on the winner and loser.
+
+### User Goals
+Simple to understand. The user should know exactly what choices they have to make as soon as they enter the webpage and not have to click around the webpage wondering how it functions. The user should know exactly when they win, lose or draw and this information should be conveyed to them by the scoring system I've implemented.
+
+## Design
+---
+I aimed for fun, playful and childlike colors and font for the site considering it can be played by all ages and be attractive to anyone.
+
+### Colour Scheme
+![colormind-website-screenshot-colors-of-the-website](assets/images/colormind-website-color-scheme.png)
+The color palette was created using [Colormind](http://colormind.io/)
+
+### Typography
+I used [Google Fonts](https://fonts.google.com/) to select the relevant font for the site. I chose a font called DynaPuff. It is playful, its curves being unstrict and welcoming. It gives off a childish vibe that welcomes the game to all ages. 
+
+### Wireframes
+![framework image of rock, paper, scissors, lizard, spock functionality 1](assets/images/framework1.jpg)
+![framework image of rock, paper, scissors, lizard, spock functionality 2](assets/images/framework2.jpg)
+
+## Features
+---
+I made the page as simple as possible, with all of the gameplay and information on one page split into three different sections.
+
+- This is the header, indicating the name of the game as well as explaining each choice the user can make in the game. 
+There is also a secondary heading pushing the user to 'Make your move!'
+![header of the website](assets/images/header.png)
+
+- This is the game area in which the user selects a choice for the game to start/continue
+![game area](assets/images/game-area.png)
+
+- This is the score area in which the user and computer's score is stored and incremented based on the win and lose conditions
+If the user and computer select the same choice then the score will not be incremented
+![score area](assets/images/score-area.png)
+
+### Future Implementations
+
+- A toggle that can indicate the best out of a desired number of rounds. This could then alert the user that the user or the computer won the select number of rounds. 
+- A restart button that doesn't require the user to reload the page.
+- More interactive features like the page changing color to green when the user wins and red when the user loses. 
+
+### Accessibility
+
+For the accessibility, I implimented:
+
+- Semantic HTML.
+- Sufficient colour contrast.
+- Clear and large options for choices. 
+
+## Technologies Used
+---
+### Languages Used
+
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks, Libraries & Programs Used
+
+- Github
+- Gitpod
+- Google Fonts
+- Google Dev Tools
+- Am I Responsive?
+- w3 schools
+
+## Deployment & Local Development
+---
+### Deployment
+
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+- Log in (or sign up) to Github.
+- Find the repository for this project, rock-paper-scissors.
+- Click on the Settings link.
+- Click on the Pages link in the left hand side navigation bar.
+- In the Source section, choose main from the drop down select branch menu. 
+- Select Root from the drop down select folder menu.
+- Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+### Local Development
+
+#### How to Fork
+
+To fork the Rock Paper Scissors repository:
+
+- Log in (or sign up) to Github.
+- Go to the repository for this project, JordanKingVeoxyl/rock-paper-scissors-lizard-spock-final
+- Click the Fork button in the top right corner..
+
+#### How to Clone
+
+To clone the Rock Paper Scissors repository:
+
+- Log in (or sign up) to GitHub.
+- Go to the repository for this project, MaryAnneLee/rock-paper-scissors
+- Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+- Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+## Testing
+---
+- Chrome developer tools was used to find any issues while building the webpage.
+
+- The W3C validators for HTML and CSS was used when the webpage was finsihed. JSHint was used for JavaScript.
+
+![W3C HTML Checker](assets/images/W3C-HTML.png)
+![W3C CSS Checker](assets/images/W3C-CSS.png)
+![JShint Checker](assets/images/jshint.png)
+
+- Lighthouse Testing
+![Lighthouse Testing](assets/images/lighthouse-testing.png)
+
+### Solved Bugs
+
+- Although the website, by the user's perspective was working correctly, there was still an error - stating that each choice the user selected would print in the console as null. This ended up being due to the fact that I didn't label by variables correctly, changing them from the words for the choices (i.e. rock, paper, scissors, etc) instead of the letters that converted to those words later on in the code's process (r, p, s, etc). My mentor and tutors helped me figure this out by printing console.log in numerous places in my code and following where it led me. It took me a while but taught me a lot in the process.
+
+## Credits
+---
+### Code Used
+
+Inspiration and code came from four diffrent tutorials on YouTube and other students' previous projects.
+
+- [Web Dev simplified - How to code Rock Paper Scissors](https://www.youtube.com/watch?v=1yS-JV4fWqY)
+
+- [Whatsdev - How to Build a Rock Paper Scissors Game with Html, Css, and Javascript part 1](https://www.youtube.com/watch?v=qipq1BV5myU)
+
+- [Whatsdev - How to Build a Rock Paper Scissors Game with Html, Css, and Javascript part 2](https://www.youtube.com/watch?v=Qqy8Ov3NWvQ)
+
+- [Code with Ania Kubow - 3 Ways to Code Rock, Paper, Scissors in JavaScript (Beginner to Advanced!)](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=1225s)
+
+- [https://github.com/MaryAnneLee/Rock-Paper-Scissors/](https://github.com/MaryAnneLee/Rock-Paper-Scissors/)
+
+- [https://github.com/Meyaal/Game](https://github.com/Meyaal/Game)
+
+- [The readme template came from Kera Cudmore from GitHub](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md)
+
+### Content
+
+I wrote the content for this website.
+  
+### Acknowledgments
+
+Thanks to my mentor Martina and the helpful tutors for helping me fix bugs and leading me in the right direction. Also thanks to Kera Cudmore for the great Readme-file template. 
