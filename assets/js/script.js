@@ -5,11 +5,11 @@ let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const result_p = document.querySelector(".result > p");
-const rock_div = document.getElementById("rock");
-const paper_div = document.getElementById("paper");
-const scissors_div = document.getElementById("scissors");
-const lizard_div = document.getElementById("lizard");
-const spock_div = document.getElementById("spock");
+const rock_div = document.getElementById("r");
+const paper_div = document.getElementById("p");
+const scissors_div = document.getElementById("s");
+const lizard_div = document.getElementById("l");
+const spock_div = document.getElementById("k");
 //GETS RANDOM COMPUTER CHOICE
 function getComputerChoice() {
 	const choices = ['r', 'p', 's', 'l', 'k'];
@@ -27,21 +27,29 @@ function convertToWord(letter) {
 // FUNCTIONS FOR MESSAGE ON WIN, LOST OR DRAW, AND INCREMENT SCORE TO THE WINNER
 function win(userChoice, computerChoice) {
 	const userChoice_div = document.getElementById(userChoice);
+	console.log(" Win userChoice");
+	console.log(userChoice);
+	console.log(" Win userChoice_div");
+	console.log(userChoice_div);
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You win!`;
-	userChoice_div.classList.add('result-winner');
+	// userChoice_div.classList.add('result-winner');
 	setTimeout(() => userChoice_div.classList.remove('result-winner'), 2000);
 }
 
 function lose(userChoice, computerChoice) {
 	const userChoice_div = document.getElementById(userChoice);
+	console.log(" Lose userChoice");
+	console.log(userChoice);
+	console.log(" Lose userChoice_div");
+	console.log(userChoice_div);
 	computerScore++;
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You lost!`;
-	userChoice_div.classList.add('result-loser');
+	// userChoice_div.classList.add('result-loser');
 	setTimeout(() => userChoice_div.classList.remove('result-loser'), 2000);
 }
 
