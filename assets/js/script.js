@@ -27,29 +27,19 @@ function convertToWord(letter) {
 // FUNCTIONS FOR MESSAGE ON WIN, LOST OR DRAW, AND INCREMENT SCORE TO THE WINNER
 function win(userChoice, computerChoice) {
 	const userChoice_div = document.getElementById(userChoice);
-	console.log(" Win userChoice");
-	console.log(userChoice);
-	console.log(" Win userChoice_div");
-	console.log(userChoice_div);
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You win!`;
-	// userChoice_div.classList.add('result-winner');
 	setTimeout(() => userChoice_div.classList.remove('result-winner'), 2000);
 }
 
 function lose(userChoice, computerChoice) {
 	const userChoice_div = document.getElementById(userChoice);
-	console.log(" Lose userChoice");
-	console.log(userChoice);
-	console.log(" Lose userChoice_div");
-	console.log(userChoice_div);
 	computerScore++;
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You lost!`;
-	// userChoice_div.classList.add('result-loser');
 	setTimeout(() => userChoice_div.classList.remove('result-loser'), 2000);
 }
 
